@@ -1,0 +1,21 @@
+<div class="modal-content" *ngIf="this.service.basicCloseModal">
+    <div class="modal-header">
+        <img id="img" [src]="imgUrl">
+        <h1 [innerHTML]="erroEnum"></h1>
+    </div>
+    <div class="modal-body">
+        <p [innerHTML]="descritionEnum"></p>
+        <button (click)="onCloseModal()"> {{buttoMenssage}} </button>
+    </div>
+</div>
+
+<div class="modal-content" *ngIf="this.service.basicLogOutModal">
+    <div class="modal-header">
+        <img id="img" [src]="imgUrl">
+        <h1 [innerHTML]="erroEnum"></h1>
+    </div>
+    <div class="modal-body">
+        <p [innerHTML]="descritionEnum"></p>
+        <button (click)="onLogOutModal()"> {{buttoMenssage}} </button>
+    </div>
+</div>

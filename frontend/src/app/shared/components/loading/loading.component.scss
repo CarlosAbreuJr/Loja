@@ -1,0 +1,27 @@
+@import '../../../../assets/scss/style';
+
+.fadeContainer {
+  background-color: rgba(white, 0.5);
+  backdrop-filter: blur(12px);
+  background-size: cover;
+  position: absolute;
+  z-index: 88;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  .spinnerContainer {
+    margin-top: 32vh;
+    position: relative;
+    z-index: 999999999999999999999999999999999999999999999999999;
+
+    h1 {
+      margin-top: 8vh;
+      font-size: 2.6rem;
+      text-align: center;
+      font-weight: 900;
+      color: darken(gray, 4%);
+    }
+  }
+}
